@@ -1,0 +1,43 @@
+Algoritmo construccion
+	Definir medidavertical, medidahorizontal, medidabase Como real;
+	Definir opcionesDeMenu Como Entero;
+	Escribir "Bienvenido! vamos a hacer un techo"
+	Escribir "ingrese la medida vertical de su techo en Cm"
+	Leer medidavertical
+	Escribir "ingrese la medida horizontal de su techo en Cm"
+	Leer medidahorizontal
+	Escribir "ingrese la medida de la base o profundidad de su techo en Cm"
+	Leer medidabase
+	Escribir "ahora elija la opcion que desea realizar"
+	Escribir "1: materiales recomendados para mi techo"
+	Escribir "2: calcular la pendiente de un techo"
+	Leer opcionesDeMenu
+	
+	Segun opcionesDeMenu Hacer
+		1:
+			Definir alairelibre Como Caracter; 
+			Escribir "Hola! vamos a ver cuales seran los materiales recomendados a usar para tu contruccion"
+			Escribir "responde la siguiente encuesta para calcular..."
+			Escribir "tu techo sera al aire libre responde SI o NO"
+			Leer alairelibre
+			Si alairelibre == "si" Entonces
+				Escribir "recomendado 1: "
+				Escribir "recomendado 2: "
+			SiNo
+				Escribir "recomendado 1: "
+				Escribir "recomendado 2: "
+			Fin Si
+		2: 
+			Definir verticalminimarecomendada, pendiente Como Real;
+			verticalminimarecomendada <- medidabase/6
+			pendiente0 <- verticalminimarecomendada / medidabase * 100 / 100
+			pendiente1 <- atan(pendiente0)
+			pendiente <- pendiente1 * 180/PI
+			Escribir "de acuerdo con las medida de la base proporcionada"
+			Escribir "su medida vertical minima es: "
+			Escribir verticalminimarecomendada," para una pendiente de: ",pendiente0,"%"," o ",pendiente,"°"  
+		De Otro Modo:
+			Escribir "opcion incorrecta vuleva a intentarlo..."
+	Fin Segun
+	
+FinAlgoritmo
