@@ -1,14 +1,13 @@
-class pilares_techo
-    attr_accessor :altura, :medidahorizontal
-    def initialize 
-        @altura = gets.chomp 
-        Si altura > 200 
-        puts "necesitaras unas bases firmes para su techo como 
+class PilaresTecho
+    attr_accessor :altura, :medida_horizontal
+    def initialize(altura)  
+        if altura > 200 
+        return "necesitaras unas bases firmes para su techo como 
              - asd
              - asd
              - asd"
-        SiNo
-        puts "puedes usar materiales un poco mas livianos como:
+        elsif
+        return "puedes usar materiales un poco mas livianos como:
                   - asd
                   - asd
                   - asd"
@@ -19,7 +18,8 @@ class pilares_techo
 #cada 200cm le diga al contructor que debe añadir un pilar 
 #y despues reparta la cantidad de pilar entre la medida del techo 
 #hacer esto para el ancho y largo del techo
-    
+
+
     def medidahorizontal
         Si medidahorizontal < 150
         Si medidahorizontal > 150 y < 300
