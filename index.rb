@@ -1,26 +1,30 @@
 require_relative "calcular_pendiente/materials/bases.rb"
 
+#pendant
 puts "Escriba la medida de la base de su techo: "
 base = gets.chomp
 
 
-vertical = Pendiente.new(@vminreco)
+vertical = Pendant.new(@minimum_recommended_vertical)
 vertical.calcularvertical
 
-pendiente_porcentaje = Pendiente.new(@pendiente0)
-pendiente_porcentaje.cal_pen_porc
+porcentual_pendant = Pendant.new(@porcentual_pendant)
+porcentual_pendant.cal_pen_porc
 
-pendiente_grados = Pendiente.new(pendiente,pendiente1)
-pendiente_grados.cal_pen_grad
+pendant_grades = Pendant.new(Pendant,@porcentual_pendant)
+pendant_grades.cal_pen_grad
 
-puts "#{@vminreco} para una pendiente de: "
+puts "#{@minimum_recommended_vertical} para una pendiente de: "
+puts "#{@porcentual_pendant}% en porcentaje"
+puts "#{@pendant_grades}° en grados"
 
-puts "#{@pendiente0}% en porcentaje"
+#materials/pillars
+height = gets.chomp
+pillars_ceiling = PllarsCeiling.new(height)
+puts pillars_ceiling
 
-altura = gets.chomp
-pilar_techo = PilaresTecho.new(altura)
-puts pilar_techo
+separation_pillars = 200
 
+#materials/tiles
 tile_horizontal = gets.chomp
-
 tile_slope = gets.chomp
