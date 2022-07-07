@@ -17,13 +17,10 @@ class PillarsCeiling
         end
     end
 
-
-#cada 200cm le diga al contructor que debe añadir un pilar 
-#y despues repartir la cantidad de pilares entre la medida del techo 
-#hacer esto para el ancho y largo del techo
-    def necessary_pillars(horizontal_length,depth,separation_pillars)
+    def necessary_pillars(horizontal_length,depthlength,separation_pillars)
         horizontal_pillars = horizontal_length / separation_pillars
-        depth_pillars = depth / separation_pillars
+        depth_pillars = depth_length / separation_pillars
+        total_pillars = depth_pillars + horizontal_pillars
     end
 end
 					
