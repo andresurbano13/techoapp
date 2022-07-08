@@ -17,6 +17,8 @@ class Pendant
     def calculate_in_grades
         @pendant_grades = Math.atan(porcentual_pendant) * 180/PI
     end
+
+    
 end
 
 

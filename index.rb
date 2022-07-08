@@ -1,6 +1,7 @@
 require_relative "calcular_pendiente/materials/pillars.rb"
 
 #pendant
+#cambiar el porcentaje de inclinacion de 16%(actual) por 10% es decir cada 100cm sube 10cm
 puts "Escriba la medida de la base o profundidad de su techo: "
 base = gets.chomp
 
@@ -28,8 +29,9 @@ string_indoor = "puedes usar tejas mas libianas y economicas como:
                  - asd
                  - asd
                  - asd"
-                 
+
 #materials/pillars
+#parte mas alta 280
 puts "escribe la medida desde el suelo hasta la parte mas alta de tu techo en cm"
 height = gets.chomp
 pillars_ceiling = PillarsCeiling.new(height)
