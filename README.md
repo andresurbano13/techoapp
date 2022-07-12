@@ -78,3 +78,28 @@ la medida de largo de cada teja por la medida de profundidad o base del techo as
 cuantas tejas necesitara para cubrir su techo horizontal y verticalmente para despues dar un total de tejas necesarias
 
 -bases
+lo que haremos en esta funcion sera decirle a nuestro usuario cuantas y cuales bases recomendamos para que use en su construccion.
+Con respecto a cuales bases debe usar estudiaremos primero el tipo de teja que utilizara, como lo dijimos anteriormente la diea
+es empezar por ahora solo con teja zinc teniendo esto encuenta y sabiendo que tambien hay varios tamaños y pesos de zinc 
+con estas medidas standard debemos facilitar al usuario para cada medida de zinc el tipo de base que puede usar con respecto a su peso.
+Ahora con respecto a cuantas bases o pilares debe usar el usuario ya definido el tipo de base que usara 
+el peso del zinc: junto con el tamaño total del techo (horizontal, vertical y profundidad) nos daran la medida que debe haber entre pilar y pilar para que estos aguanten el peso de nuestra teja
+tener en cuenta repartir el peso, entre mas pilares mas peso aguantan = material mas blando pero mas material, entre menos pilares mas
+peso para cada pilar = material mas resistente pero menos material hacer un equilibrio entre material y distancia de pilar a pilar.
+dar varias opciones al usuario desde la mas recomendada para todo lo anterior lo importante es mostrarle al usuario la mejor opcion
+para tener un techo funcional y estetico sin embrago el usuario debera tomar su decision 
+
+-vigas
+
+-diagonales
+algunos techo necesitan refuerzos como diagonales esto puede o no ser necesario asi que lo dejaremos opcoinal pero diciendole
+al usuario que lo puede hacer si siente que es necesario
+
+-alero
+el alero es la parte del techo que sale despues de la punta de la viga el saber cuanto es lo maximo que puede tener el alero depende de el tamaño del techo y de sus materiales 
+para este alero debemos preguntar si el techo tengra canaleta de desague de ser asi el techo no tendra alero ya que la canaleta debe ir sujetada a la viga
+y el aguan debe caer en ella 
+
+-canaleta
+
+  
