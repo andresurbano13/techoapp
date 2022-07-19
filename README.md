@@ -101,5 +101,6 @@ para este alero debemos preguntar si el techo tengra canaleta de desague de ser 
 y el aguan debe caer en ella 
 
 -canaleta
+opcional
 
   
