@@ -47,37 +47,55 @@ This project is [MIT](LICENSE) licensed.
 
 ## guide
 
-preguntaremos al usuario por las siguiente medidas que iremos necesitando a lo largo del proyecto
-lo primero es pedir al usuario que ingrese la medida de la base o profundidad del techo
-altura a la que desea el techo, esta medida debe ser la parte mas baja del techo
-medida horizontal total del techo 
-preguntar si el techo sera al aire libre o interior 
+**preguntar al usuario si desea continuar con las medidas proporcionadas por el programa o desea añadir sus propias medidas
+por ejemplo en caso de la pendiente tal vez el programa proporcione una medida recomendada pero el usuario quiere modificar esa medida 
+para continuar son su propia medida hacia la recomendacion de materiales 
 
--calcular pendiente
-tomaremos la medida de la base y la medida de la altura del techo
+descripción
+aplicacion para ayudar a los contstructores a sacar medidas el objetivo principal era solo ayudar a hallar una pendiente para ciertas medidas de un techo
+pero se han ido sumando funciones mas interesantes como recomendar al usuario materiales y la cantidad de necesaria para realizar su techo
+con esto tambien dando una seguridad de que el techo queda firme y estable teneindo en cuenta de que es solo meterial recomendado y que el usario
+decidira al final todo esto 
+
+valor esperado
+se espera tener una aplicacion sencilla que solo le de al usuario unas bases para el hacer su propio diagnostico de que como hacer su techo
+sin embargo que sea una guia muy util
+
+especificación técnica
+preguntaremos al usuario por las siguiente medidas las cuales todas seran en centimetros las cuales iremos necesitando a lo largo del proyecto
+-lo primero es pedir al usuario que ingrese la medida de la base o profundidad del techo
+-altura a la que desea el techo, esta medida debe ser la parte mas baja del techo
+-medida horizontal total del techo 
+-preguntar si el techo sera al aire libre o interior 
+
++ calcular pendiente
+tomaremos la medida de la base y la medida de la altura del techo en su parte mas baja
 con estos datos debemos calcular una pendiente minima recomendada para el usuario, teniendo en cuenta 
 una medida vertical minima recomendada, haremos un calculo basados en que la vertical minima recomendada sube un 10% con respecto 
 a la medida de la base o profundidad por ejemplo: 
 base: 100cm vertical: 10cm. 
 ademas a esto tendremos que agregar los centimetros de la altura del techo en su parte mas baja ya 
 proporcionada por el usuario, esto se sumara a nuestra vertical, por ejemplo: 
-base: 100cm + parte mas baja: 200cm = vertical: 210cm   
+base: 100cm = 10% de subida recomendada de una vertical = 10cm de vertical + parte mas baja: 200cm = 210cm vertical total    
 
--tejas
++ tejas
 la accion principal de esta funcion sera proporcionar al usuario la cantidad minima de tejas que debe usar para cubrir su techo
 teniendo en cuenta que hay muchas variedades de tejas para utilizar en un techo vamos a ir paso a paso asi que 
-primero haremos esta funcion solo enfocandonos en una teja de zinc mas adelante agregaremos mas tipos de tejas
+primero haremos esta funcion solo enfocandonos en las tejas de zinc mas adelante agregaremos mas tipos de tejas
 entonces tenemos que hay tejas de zinc de varios tamaños y pesos difirentes:
-.zinc ondulada 3.048x0.80mt Cal 35 0.17cm
-.zinc
-.zinc
+-zinc ondulada 3048 x 80cm Cal 35 0.17cm
+-zinc
+-zinc
 primero tomaremos la medida horizontal total del techo proporcionada por el usuario, despues preguntaremos a este 
 cual de estos tipos de zinc usara para su techo,con esto calcularemos por medio de una division
 de la medida de ancho de cada teja por la medida horizontal total del techo y asi mismo para la pendiente dividimos
 la medida de largo de cada teja por la medida de profundidad o base del techo asi sabremos
 cuantas tejas necesitara para cubrir su techo horizontal y verticalmente para despues dar un total de tejas necesarias
+hay que tener en cuenta el traslape entre teja y teja horizontal se recomiendo un traslape de minimo un onda de la teja
+esto le restara a cada teja _____cm por lado y lado tambien debemos tener un traslape entre teja y teja de a lo largo 
+si se utilizara mas de una ilera de zinc la cual tambien nos resta _____cm de largo 
 
--bases
++ bases
 lo que haremos en esta funcion sera decirle a nuestro usuario cuantas y cuales bases recomendamos para que use en su construccion.
 Con respecto a cuales bases debe usar estudiaremos primero el tipo de teja que utilizara, como lo dijimos anteriormente la diea
 es empezar por ahora solo con teja zinc teniendo esto encuenta y sabiendo que tambien hay varios tamaños y pesos de zinc 
@@ -89,18 +107,18 @@ peso para cada pilar = material mas resistente pero menos material hacer un equi
 dar varias opciones al usuario desde la mas recomendada para todo lo anterior lo importante es mostrarle al usuario la mejor opcion
 para tener un techo funcional y estetico sin embrago el usuario debera tomar su decision 
 
--vigas
++vigas
 
--diagonales
++diagonales
 algunos techo necesitan refuerzos como diagonales esto puede o no ser necesario asi que lo dejaremos opcoinal pero diciendole
 al usuario que lo puede hacer si siente que es necesario
 
--alero
++alero
 el alero es la parte del techo que sale despues de la punta de la viga el saber cuanto es lo maximo que puede tener el alero depende de el tamaño del techo y de sus materiales 
 para este alero debemos preguntar si el techo tengra canaleta de desague de ser asi el techo no tendra alero ya que la canaleta debe ir sujetada a la viga
 y el aguan debe caer en ella 
 
--canaleta
++canaleta
 opcional
 
   

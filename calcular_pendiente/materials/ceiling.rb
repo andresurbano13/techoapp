@@ -12,9 +12,13 @@ class Deck
        end
     end
 
+    def zinc_tiles
+        zinc_small = 
+    end
+
     def tiles(horizontal_length,depth_length)
-        tile_slope = horizontal_length / tile_slope
-        tile_horizontal = depth_length / tile_horizontal
-        total_tiles = tile_slope + tile_horizontal 
+        tiles_slope = horizontal_length / tile_length
+        tiles_horizontal = depth_length / tile_width
+        total_tiles = tiles_slope + tiles_horizontal 
     end
 end

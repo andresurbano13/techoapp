@@ -1,5 +1,5 @@
 class Pendant
-    BASE_DIVISOR = 6.0
+    BASE_DIVISOR = 10
     attr_reader :minimum_recommended_vertical, :base, :porcentual_pendant, :pendant_grades
     
     def initialize(base)
@@ -7,7 +7,7 @@ class Pendant
     end
 
     def calculate_minimum_recommended_vertical
-        @minimum_recommended_vertical = base / BASE_DIVISOR
+        @minimum_recommended_vertical = (base / BASE_DIVISOR) + lower_part
     end
 
     def calculate_in_porcentual

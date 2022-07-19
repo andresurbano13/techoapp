@@ -1,10 +1,12 @@
 require_relative "calcular_pendiente/materials/pillars.rb"
 
 #pendant
-#cambiar el porcentaje de inclinacion de 16%(actual) por 10% es decir cada 100cm sube 10cm
-puts "Escriba la medida de la base o profundidad de su techo: "
+puts "Escriba la medida de la base o profundidad de su techo en centimetros: "
 base = gets.chomp
-
+puts "Escriba la medida a la que desea la altura de su techo en su parte mas baja en centimetros: "
+lower_part = gets.chomp
+puts "Escriba la medida horizontal completa de su techo en centimetros: "
+horizontal_length = gets.chomp
 
 vertical = Pendant.new(@minimum_recommended_vertical)
 vertical.calcularvertical
@@ -15,9 +17,11 @@ porcentual_pendant.cal_pen_porc
 pendant_grades = Pendant.new(Pendant,@porcentual_pendant)
 pendant_grades.cal_pen_grad
 
-puts "#{@minimum_recommended_vertical} para una pendiente de: "
-puts "#{@porcentual_pendant}% en porcentaje"
-puts "#{@pendant_grades}° en grados"
+puts "te recomendamos levantar una vertical de #{@minimum_recommended_vertical}cm, esta sera la parte mas alta de tu techo para una pendiente con relacion a tu parte mas baja de: "
+puts "inclinacion #{@porcentual_pendant}% en porcentaje"
+puts "inclinacion #{@pendant_grades}° en grados"
+puts "Puedes hacer una pendiente mas inclinada subiendo la vertical de la parte mas alta de su techo te recomendamos la anterior como un minimo de inclinacion para que el agua corra bien
+      sin embargo esto puede variar de acuerdo a lo que necesites lo que NO te recomendamos es quitarle grados de inlclinacion ya que el agua podria devolverse o estancarse"
 
 #materials outdoor_or_indoor
 outdoor = gets.chomp
@@ -50,9 +54,9 @@ puts "teniendo en cuenta una separacion de #{separation_pillars} recomendamos po
 #materials/tiles
 puts "escribe la medida de una de las tejas que utilizara para su techo en cm"
 puts "Ancho: "
-tile_horizontal = gets.chomp
+tile_width = gets.chomp
 puts "Largo: "
-tile_slope = gets.chomp
+tile_length = gets.chomp
 tiles = Deck.new(horizontal_length,depth_length)
-puts "De acuerdo con las medidas proporcionadas su techo necesitara minimo #{tile_horizontal} tejas horizontalmente 
-      y minimo #{tile_slope} tejas para la pendiente para un total minimo de #{total_tiles} tejas"
+puts "De acuerdo con las medidas proporcionadas su techo necesitara minimo #{tiles_horizontal} tejas horizontalmente 
+      y minimo #{tiles_slope} tejas para la pendiente para un total minimo de #{total_tiles} tejas"
