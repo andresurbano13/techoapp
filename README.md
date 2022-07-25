@@ -45,7 +45,7 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](LICENSE) licensed.
 
-## guide
+## Guide
 
 **preguntar al usuario si desea continuar con las medidas proporcionadas por el programa o desea añadir sus propias medidas
 por ejemplo en caso de la pendiente tal vez el programa proporcione una medida recomendada pero el usuario quiere modificar esa medida 
